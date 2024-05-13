@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<form style="width:50% ; margin : auto" method="post">
+<form style="width:50% ; padding: 90px; margin : auto" method="post">
     <h1>{{type}} page</h1>
     {% csrf_token %}
 {{form | crispy}}
@@ -12,6 +12,7 @@
 </form>
 
 {% endblock %}
+
 
 <footer>
 {% include 'foter.html' %}
