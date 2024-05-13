@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-qgis#s8x!10k%h93@mgyhfto7@7z+9o^c+z&pkhf-#s1o#=q9w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://libery-1.onrender.com','https://*.127.0.0.1']
 
 # Application definition
 
