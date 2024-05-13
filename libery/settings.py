@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'author',
     'photos',
+    "liberymanagenment"
     'crispy_forms',
     'crispy_bootstrap5',
 ]
