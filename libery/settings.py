@@ -99,8 +99,8 @@ WSGI_APPLICATION = 'libery.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
+        default='postgres://liberymanagenment_user:47oVCUEVE2ut15Z0sUALlz4DE55cBNoZ@dpg-cp14sbvsc6pc7385o3eg-a.oregon-postgres.render.com/liberymanagenment',
+        
     )
 }
 
