@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'author',
     'photos',
-    "liberymanagenment"
     'crispy_forms',
     'crispy_bootstrap5',
 ]
@@ -86,26 +85,25 @@ WSGI_APPLICATION = 'libery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# import os
-
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgres://liberymanagenment_user:47oVCUEVE2ut15Z0sUALlz4DE55cBNoZ@dpg-cp14sbvsc6pc7385o3eg-a.oregon-postgres.render.com/liberymanagenment',
-        
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgres://liberymanagenment_user:47oVCUEVE2ut15Z0sUALlz4DE55cBNoZ@dpg-cp14sbvsc6pc7385o3eg-a.oregon-postgres.render.com/liberymanagenment',
+        
+#     )
+# }
 
 
 # Password validation
